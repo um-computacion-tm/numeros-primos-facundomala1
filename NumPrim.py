@@ -20,23 +20,15 @@ def is_prime(value):
             return False
     
         if value % 3 == 0:
-    
             return False
-    
         i = 5
     
         w = 2
-    
         while i * i <= value:
-    
             if value % i == 0:
-    
                 return False
-    
             i += w
-    
             w = 6 - w
-    
         return True
 
 class TestPrimos(unittest.TestCase):
